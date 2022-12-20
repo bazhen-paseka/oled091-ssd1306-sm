@@ -184,3 +184,12 @@ SSD1306_Error_t ssd1306_FillBuffer(uint8_t* buf, uint32_t len);
 _END_STD_C
 
 #endif // __SSD1306_H__
+
+	//	  	ssd1306_Fill(Black);
+	//	  	ssd1306_SetCursor(0,0);
+	//	  	sprintf(DataChar,"Volt %d", counter ) ;
+	//	  	ssd1306_WriteString(DataChar, Font_11x18, White); //White
+	//	  	ssd1306_SetCursor(0,23);
+	//	  	sprintf(DataChar,"Amp: %d", counter ) ;
+	//	  	ssd1306_WriteString(DataChar, Font_11x18, White); //White
+	//	  	ssd1306_UpdateScreen();
