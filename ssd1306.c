@@ -3,6 +3,8 @@
 #include <stdlib.h>
 #include <string.h>  // For memcpy
 
+#ifdef SSD1306
+
 #if defined(SSD1306_USE_I2C)
 
 void ssd1306_Reset(void) {
@@ -592,3 +594,5 @@ void ssd1306_SetDisplayOn(const uint8_t on) {
 uint8_t ssd1306_GetDisplayOn() {
     return SSD1306.DisplayOn;
 }
+
+#endif
