@@ -3,6 +3,8 @@
 #ifndef __SSD1306_FONTS_H__
 #define __SSD1306_FONTS_H__
 
+#ifdef SSD1306
+
 #include "ssd1306_conf.h"
 
 typedef struct {
@@ -22,5 +24,6 @@ extern FontDef Font_11x18;
 #endif
 #ifdef SSD1306_INCLUDE_FONT_16x26
 extern FontDef Font_16x26;
+#endif
 #endif
 #endif // __SSD1306_FONTS_H__

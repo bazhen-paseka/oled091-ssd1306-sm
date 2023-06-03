@@ -1,6 +1,8 @@
 
 #include "ssd1306_fonts.h"
 
+#ifdef SSD1306
+
 #ifdef SSD1306_INCLUDE_FONT_7x10
 static const uint16_t Font7x10 [] = {
 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000,  // sp
@@ -410,4 +412,6 @@ FontDef Font_11x18 = {11,18,Font11x18};
 #endif
 #ifdef SSD1306_INCLUDE_FONT_16x26
 FontDef Font_16x26 = {16,26,Font16x26};
+#endif
+
 #endif

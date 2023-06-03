@@ -8,6 +8,8 @@
 #ifndef __SSD1306_H__
 #define __SSD1306_H__
 
+#ifdef SSD1306
+
 #include <stddef.h>
 #include <_ansi.h>
 
@@ -193,3 +195,4 @@ _END_STD_C
 	//	  	sprintf(DataChar,"Amp: %d", counter ) ;
 	//	  	ssd1306_WriteString(DataChar, Font_11x18, White); //White
 	//	  	ssd1306_UpdateScreen();
+#endif
